@@ -20,7 +20,6 @@ console.log(difference());
 
 console.log([...new Set([...arr1, ...arr2])]);
 
-
 // WeakMap key必须是对象
 class MyFn {}
 let obj = new MyFn();
