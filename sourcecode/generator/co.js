@@ -19,10 +19,11 @@ const co = (it) => {
             if(done) return resolve(value);
             Promise.resolve(value).then(data => {
                 next(data);
-            }).catch(reject)
+            }, reject)
         }
         next();
     })
 }
+
 
 co(ittest()).then(console.log, console.error);
